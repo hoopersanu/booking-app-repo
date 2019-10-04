@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".VarificationCode_Form">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="388dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/backgroun_whole"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="397dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="132dp"
+        android:orientation="vertical"
+        android:paddingLeft="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="20sp"
+            android:text="Enter Verification Code"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25sp"
+            android:text="We have sent you a 4 digit verification"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="code on +91 "
+                android:layout_marginLeft="65sp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9999999999"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <EditText
+            android:paddingLeft="25sp"
+            android:id="@+id/otpEditText1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:maxLength="1"
+            android:background="@drawable/varificationbox_border"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otpEditText2"
+            android:layout_width="60dp"
+            android:layout_marginLeft="10sp"
+            android:layout_height="60dp"
+            android:maxLength="1"
+            android:paddingLeft="25sp"
+
+            android:background="@drawable/varificationbox_border"
+
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otpEditText3"
+            android:layout_width="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:maxLength="1"
+            android:paddingLeft="25sp"
+
+            android:background="@drawable/varificationbox_border"
+
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/otpEditText4"
+            android:layout_width="60dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="1"
+            android:paddingLeft="25sp"
+
+            android:background="@drawable/varificationbox_border"
+
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/arrow_logo"
+        android:onClick="btnOtpVerification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

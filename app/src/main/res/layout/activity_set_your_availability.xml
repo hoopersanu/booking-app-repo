@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetYourAvailability">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroun_whole"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="75dp"
+                    android:text="Set your Availability"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="Let us know when you're available to provide"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="services."
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <CalendarView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30sp"
+                android:background="@drawable/varificationbox_border" />
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginLeft="33sp"/>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unavailable"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginLeft="20sp"/>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="32sp"/>
+                    <EditText
+                        android:paddingLeft="18sp"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+
+                        android:hint="9:00 am"
+                        android:background="@drawable/varificationbox_border"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="32sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:layout_marginTop="50sp"
+                    android:textSize="20sp"
+                    android:text="to"
+
+                    />
+                <LinearLayout
+                    android:gravity="end"
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="28sp"
+                        />
+                    <EditText
+                        android:paddingLeft="18sp"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="10sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:hint="9:00 pm"
+                        android:background="@drawable/varificationbox_border"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10sp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ New Interval"
+                android:layout_marginLeft="32sp"
+                android:textColor="#C73737"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buffers Time"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginTop="25sp"
+                android:layout_marginLeft="32sp"/>
+
+            <TextView
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Let us know when you are available to provide servie"
+                android:layout_marginLeft="32sp"
+                android:textColor="#000"
+                android:textSize="12sp"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buffer before event"
+                    android:textSize="15sp"
+                    android:textColor="#000"/>
+                <EditText
+                    android:paddingLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:hint="0 min"
+                    android:background="@drawable/varificationbox_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"/>
+
+                <TextView
+                    android:layout_marginTop="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buffer before event"
+                    android:textSize="15sp"
+                    android:textColor="#000"/>
+                <EditText
+                    android:paddingLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:hint="0 min"
+                    android:background="@drawable/varificationbox_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"/>
+
+                <Button
+                    android:background="@drawable/btn_set_availability"
+                    android:layout_marginTop="30sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                    android:text="Apply to 2 September"/>
+
+                <Button
+                    android:id="@+id/btnCal"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/btn_set_availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:text="Apply to Specific Dates"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

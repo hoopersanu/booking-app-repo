@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <Button
+    android:id="@+id/login_button"
+    android:onClick="btnlogin"
+    android:layout_width="301dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:background="#C94246"
+    android:text="Log In"
+    android:textAllCaps="false"
+    android:textColor="#fff"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.54"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+  <LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="160dp"
+    android:orientation="vertical"
+    android:paddingLeft="65sp"
+    app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="2dp">
+
+    <TextView
+        android:onClick="olololo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Welcome"
+      android:textColor="#150E0C"
+      android:textSize="35sp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Again"
+      android:textColor="#150E0C"
+      android:textSize="35sp"
+      android:textStyle="bold" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="300dp"
+    android:layout_height="51dp"
+    android:layout_marginStart="65dp"
+    android:layout_marginLeft="50dp"
+    android:background="@drawable/main_activity_number_box"
+    android:elevation="5dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+    app:layout_constraintVertical_bias="0.129">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="12dp"
+      android:paddingTop="9dp"
+      android:paddingBottom="11dp"
+      android:text="+91"
+      android:textColor="#C94246"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+    <EditText
+      android:id="@+id/phoneNumberEditText"
+      android:layout_width="wrap_content"
+      android:layout_height="49dp"
+      android:layout_marginLeft="15sp"
+      android:background="@drawable/main_activity_number_box"
+      android:ems="10"
+      android:hint="Phone Number"
+      android:inputType="numberDecimal" />
+
+
+
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/linearLayout3"
+    android:layout_width="388dp"
+    android:layout_height="209dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginRight="4dp"
+    android:background="@drawable/backgroun_whole"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingLeft="300sp"
+      android:paddingTop="38sp"
+      android:text="Sign Up"
+      android:textColor="#C94246"
+      android:textSize="17sp"
+      android:textStyle="bold"
+      android:onClick="btn_sign_up" />
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

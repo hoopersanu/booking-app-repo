@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout3"
+        android:layout_width="405dp"
+        android:layout_height="207dp"
+        android:background="@drawable/backgroun_whole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView_girl"
+        android:layout_width="118dp"
+        android:layout_height="101dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginRight="146dp"
+        android:src="@drawable/photo_girl" />
+
+    <Button
+        android:id="@+id/loginScreenBtn"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_girl"
+        android:layout_alignStart="@+id/imageView_girl"
+        android:layout_alignLeft="@+id/imageView_girl"
+        android:layout_alignEnd="@+id/imageView_girl"
+        android:layout_alignRight="@+id/imageView_girl"
+        android:layout_marginStart="-22dp"
+        android:layout_marginLeft="-22dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="-25dp"
+        android:layout_marginRight="-25dp"
+        android:background="@drawable/btn_add_favourite_fragment"
+        android:text="Login / SignUp"
+        android:textAllCaps="false"
+        android:textColor="#C94246"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

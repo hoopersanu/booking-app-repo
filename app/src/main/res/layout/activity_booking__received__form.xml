@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking_Received_Form">
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout3"
+    android:layout_width="405dp"
+    android:layout_height="207dp"
+    android:background="@drawable/backgroun_whole"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="400dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="156dp"
+        android:orientation="vertical"
+        android:paddingLeft="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="Your Booking has been"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="60sp"
+            android:text="received for"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:text="21th Aug,Saturday at 9:00  "
+            android:layout_marginLeft="30dp"
+            android:textColor="#CA5E5E"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wating for professional conformation"
+        android:textSize="18sp"
+        android:layout_marginLeft="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11" />
+
+
+    <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+        android:id="@+id/loader"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:tashieloader_animDelay="200"
+        app:tashieloader_animDur="1000"
+        app:tashieloader_dotsColor="#D10808"
+        app:tashieloader_dotsDist="5dp"
+        app:tashieloader_dotsRadius="10dp"
+        app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+        app:tashieloader_noOfDots="6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

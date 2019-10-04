@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddServiceFragment">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40sp"
+        android:text="Add Service"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <EditText
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/varificationbox_border"
+            android:hint="Service Name"
+            android:textSize="30sp" />
+
+        <EditText
+            android:padding="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/varificationbox_border"
+            android:hint="Cost"
+            android:textSize="30sp" />
+
+        <EditText
+            android:padding="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/varificationbox_border"
+            android:hint="Time Duration"
+            android:textSize="30sp" />
+
+        <EditText
+            android:padding="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/varificationbox_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Features"
+            android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:id="@+id/teamsizeLayout"
+        android:paddingLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Size"
+            android:textSize="20sp" />
+
+        <Button
+            android:textColor="#DF4F4F"
+            android:layout_width="31dp"
+            android:layout_height="28dp"
+            android:background="@drawable/btn_team_size"
+            android:text="—"
+            android:textSize="20sp" />
+        <TextView
+            android:padding="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20sp" />
+        <Button
+            android:textColor="#DF4F4F"
+            android:background="@drawable/btn_team_size"
+            android:layout_width="31dp"
+            android:layout_height="28dp"
+            android:text="+"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teamsizeLayout"
+        android:text="Save"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:background="#DF4F4F"/>
+
+    </LinearLayout>
+</RelativeLayout>
